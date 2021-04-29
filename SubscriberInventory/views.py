@@ -15,3 +15,7 @@ class VoipInventoryView(View):
 class ActivationDetailsView(View):
     def get(self, request):
         return render(request, 'VOIPLine/activation_details.html')
+
+class ThemeView(View):
+    def get(self, request):
+        return render(request, 'VOIPLine/theme.html')
