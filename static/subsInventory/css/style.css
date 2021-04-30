@@ -162,12 +162,12 @@ img { max-width: 100%; }
 .sidebar ul li a {
 	display: block; 
 	padding: 10px 20px;
-	border: 0; color: #fff;
+	border: 0; color: lightcyan;
 }
 
 .sidebar hr {
 	border-bottom: 1px solid;
-	color: black;
+	color: rgb(241, 234, 234);
 }
 
 .sidebar ul a{
@@ -210,6 +210,7 @@ ul li:hover a{
     position: relative;
 }
 
+
 .sidebar .dropdown-toggle::after {
     display: block;
     position: absolute;
@@ -217,8 +218,6 @@ ul li:hover a{
     right: 20px;
     transform: translateY(-50%);
 }
-
-.sidebar .to-top { padding: 20px; text-align: center; }
 
 .sidebar .dark-light-success-buttons { padding: 10px 20px 30px 20px; text-align: center; }
 
@@ -274,7 +273,7 @@ ul li:hover a{
 	background: #ddd; color: #444;
 }
 
-.sidebar.light a.btn-customized-4.btn-customized-secondary { background: #555; }
+.sidebar.light a.btn-customized-4.btn-customized-dark { background: black; }
 .sidebar.light a.btn-customized-4.btn-customized-light { background: #eee; }
 .sidebar.light a.btn-customized-4.btn-customized-success { background: rgb(4, 102, 12); }
 
@@ -285,7 +284,7 @@ ul li:hover a{
 .sidebar.light a.btn-customized-4.btn-customized-dark.active:focus,
 .sidebar.light a.btn-customized-4.btn-customized-dark.btn.btn-primary:not(:disabled):not(.disabled):active,
 .sidebar.light a.btn-customized-4.btn-customized-dark.btn.btn-primary:not(:disabled):not(.disabled):active:focus {
-	background: #444; color: #fff;
+	background: black; color: black;
 }
 
 .sidebar.light a.btn-customized-4.btn-customized-light:hover, 
@@ -416,7 +415,7 @@ a.btn-customized-4.btn-customized-dark:active:focus,
 a.btn-customized-4.btn-customized-dark.active:focus,
 a.btn-customized-4.btn-customized-dark.btn.btn-primary:not(:disabled):not(.disabled):active,
 a.btn-customized-4.btn-customized-dark.btn.btn-primary:not(:disabled):not(.disabled):active:focus {
-	outline: 0; background: rgb(32, 32, 32); border: 0; color: rgb(49, 48, 48); box-shadow: none;
+	outline: 0; background: black; border: 0; color: rgb(10, 10, 10); box-shadow: none;
 }
 
 a.btn-customized-4.btn-customized-light:hover, 
@@ -512,8 +511,5 @@ a.btn-customized-4.btn-customized-success.btn.btn-primary:not(:disabled):not(.di
 
 .section-3-box h3 { margin-top: 0; padding: 0 0 10px 0; }
 
-/***** Footer *****/
-
-footer { padding: 40px 0; }
 
 
