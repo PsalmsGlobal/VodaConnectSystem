@@ -7,3 +7,7 @@ from . views import*
 class LoginView(View):
     def get(self, request):
         return render(request, 'authentication/login.html')
+
+class RegisterView(View):
+    def get(self, request):
+        return render(request, 'authentication/register.html')

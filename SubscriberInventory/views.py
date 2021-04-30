@@ -19,3 +19,7 @@ class ActivationDetailsView(View):
 class ThemeView(View):
     def get(self, request):
         return render(request, 'VOIPLine/theme.html')
+
+class SubStatusView(View):
+    def get(self, request):
+        return render(request, 'VOIPLine/subs_status.html')

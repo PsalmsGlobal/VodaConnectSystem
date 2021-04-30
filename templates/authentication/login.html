@@ -22,19 +22,21 @@ body {
   background-image: url(/static/subsInventory/img/backgrounds/gpg.png);
   background-repeat: no-repeat;
   background-position: center;
+  background-size: 80%;
   box-sizing: border-box;
   box-shadow: 0 15px 25px rgba(0,0,0,.6);
   border-radius: 10px;
 }
 
-.login-box h2 {
+.login-box .title {
   margin: 0 0 30px;
   padding: 0;
-  color: rgb(208, 235, 31);
+  color: #fff;
   font-style: inherit;
   font-size: xx-large;
   text-align: center;
 }
+
 
 .login-box .user-box {
   position: relative;
@@ -83,15 +85,16 @@ body {
   letter-spacing: 4px; 
   margin-top: 50px;
   top: -30px;
+  border-radius: 20px;
   margin-left: 90px;
-  background: linear-gradient(#3a3c3f, #243b55);
+  background: linear-gradient(-135deg, #162b3a, #382809);
 }
 
 .login-box i a {
     text-align: justify;
     text-decoration: none;
     color: rgb(24, 226, 226);
-    margin-left: 35px;
+    margin-left: 40px;
     font-size: small;
     font-style: normal;
 }
@@ -102,11 +105,10 @@ body {
     box-shadow: none;
 }
 
-
 .login-box a:hover {
   background: #03e9f4;
   color: #fff;
-  border-radius: 5px;
+  border-radius: 20px;
   box-shadow: 0 0 5px #03e9f4,
               0 0 25px #03e9f4,
               0 0 50px #03e9f4,
@@ -120,9 +122,10 @@ body {
 
 .login-box a span:nth-child(1) {
   top: 0;
+  border: 1px;
   left: -100%;
   width: 100%;
-  height: 2px;
+  height: 3px;
   background: linear-gradient(90deg, transparent, #03e9f4);
   animation: btn-anim1 1s linear infinite;
 }
@@ -159,7 +162,7 @@ body {
   bottom: 0;
   right: -100%;
   width: 100%;
-  height: 2px;
+  height: 3px;
   background: linear-gradient(270deg, transparent, #03e9f4);
   animation: btn-anim3 1s linear infinite;
   animation-delay: .5s
@@ -196,10 +199,11 @@ body {
     </style>
 
    <div class="login-box">
-    <h2>LOG IN</h2>
+    <div class="title text-light text-center">LOG IN</div>
+    <div class="content">
     <form>
       <div class="user-box">
-        <input type="text" name="" required="">
+        <input type="email" name="" required="">
         <label>Username</label>
       </div>
       <div class="user-box">
@@ -214,8 +218,9 @@ body {
         Submit
       </a>  
     </form>
-   <i><a href="#">Forgot password?</a></i>
-    <i><a href="#">create one</a></i>
+   <i><a href="{% url 'password_reset' %}">Forgot password?</a></i>
+    <i><a href="{% url 'auth:register' %}">create one</a></i>
   </div>
+</div>
 
 
