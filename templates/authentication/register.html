@@ -62,16 +62,16 @@ body{
   justify-content: space-between;
   margin: 20px 0 12px 0;
 }
-form .user-details .input-box{
+form .user-details .input-group{
   margin-bottom: 15px;
   width: calc(100% / 2 - 20px);
 }
-form .input-box span.details{
+form .input-group span.details{
   display: block;
   font-weight: 500;
   margin-bottom: 5px;
 }
-.user-details .input-box input{
+.user-details .input-group input{
   height: 45px;
   width: 100%;
   outline: none;
@@ -82,8 +82,15 @@ form .input-box span.details{
   border-bottom-width: 2px;
   transition: all 0.3s ease;
 }
-.user-details .input-box input:focus,
-.user-details .input-box input:valid{
+
+.user-details .input-group span {
+  background: linear-gradient(135deg, #71b7e6, #9b59b6);
+  color: whitesmoke;
+  border:0 !important;
+}
+
+.user-details .input-group input:focus,
+.user-details .input-group input:valid{
   border-color: #9b59b6;
 }
  form .gender-details .gender-title{
@@ -101,6 +108,16 @@ form .input-box span.details{
    align-items: center;
    cursor: pointer;
  }
+
+ form .form-group {
+  float: left;
+  margin-right: 60px;
+}
+
+form .form-group1 {
+  margin-left: 50px;
+}
+
  form .category label .dot{
   height: 18px;
   width: 18px;
@@ -141,7 +158,7 @@ form .input-box span.details{
  .container{
   max-width: 100%;
 }
-form .user-details .input-box{
+form .user-details .input-group{
     margin-bottom: 15px;
     width: 100%;
   }
@@ -158,34 +175,42 @@ form .user-details .input-box{
     <div class="content">
       <form action="#">
         <div class="user-details mt-4">
-          <div class="input-box">
-            <input type="text" placeholder="Firstname" required>
+          <div class="input-group">
+            <span class="input-group-text"><i class="fas fa-user"></i></span>
+            <i><input class="input-group-text" style="text-align: left;" type="text" placeholder="Firstname" required></i>
           </div>
-          <div class="input-box">
-            <input type="text" placeholder="Lastname" required>
+          <div class="input-group">
+            <span class="input-group-text"><i class="fas fa-user"></i></span>
+            <i><input class="input-group-text" style="text-align: left;" type="text" placeholder="Lastname" required></i>
           </div>
-          <div class="input-box">
-            <input type="text" placeholder="username" required>
+          <div class="input-group">
+            <span class="input-group-text"><i class="fas fa-user"></i></span>
+            <i><input class="input-group-text" style="text-align: left;" type="text" placeholder="Username" required></i>
           </div>
-          <div class="input-box">
-            <input type="text" placeholder="Email" required>
+          <div class="input-group">
+            <span class="input-group-text"><i class="fas fa-envelope"></i></span>
+            <i><input class="input-group-text" style="text-align: left;" type="text" placeholder="Email" required></i>
           </div>
-          <div class="input-box">
-            <input type="number" placeholder="Phone Number" required>
+          <div class="input-group">
+            <span class="input-group-text"><i class="fas fa-phone"></i></span>
+            <i><input class="input-group-text" style="text-align: left;" type="number" placeholder="Phone Number" required></i>
           </div>
-          <div class="input-box">
-            <input type="number" placeholder="Create Pin" required>
+          <div class="input-group">
+            <span class="input-group-text"><i class="fas fa-map-pin"></i></span>
+            <i><input class="input-group-text" style="text-align: left;" type="number" placeholder="Create Pin" required></i>
           </div>
-        <div class="input-box">
-            <input type="text" placeholder="Password" required>
+        <div class="input-group">
+          <span class="input-group-text"><i class="fas fa-unlock-alt"></i></span>
+          <i><input class="input-group-text" style="text-align: left;" type="text" placeholder="Password" required></i>
           </div>          
-          <div class="input-box">
-            <input type="text" placeholder="Confirm your password" required>
+          <div class="input-group">
+            <span class="input-group-text"><i class="fas fa-unlock-alt"></i></span>
+          <i><input class="input-group-text" style="text-align: left;" type="text" placeholder="Confirm Password" required></i>
           </div>
           <div class="row justify-content-around">
             <div class="col-12">
-            <div class="form-group">
-              <select class="form-control text-secondary">
+            <div class="form-group1">
+              <select class="form-control text-secondary input-group-text">
                   <option class="hidden" style="font-size: small;" selected disabled>Company</option>
                   <option class="text-dark" style="font-size: small;">G.P.G Corporation</option>
                   <option class="text-dark" style="font-size: small;">Landmaster.Us</option>
@@ -197,7 +222,7 @@ form .user-details .input-box{
             </div>
           </div>
           <div class="row">
-            <div class=" col align-self-end">
+            <div class=" col align-self-start">
           <div class="form-group">
               <select class="form-control text-secondary">
                   <option class="hidden" style="font-size: small;"  selected disabled>Designation</option>
