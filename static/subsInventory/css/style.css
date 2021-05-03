@@ -1,6 +1,16 @@
 
 body { font-family: 'Roboto', sans-serif; font-size: 16px; font-weight: 300; color: #888; line-height: 30px; text-align: center; }
 
+html {
+	height: 100%;
+  }
+  body {
+	margin:0;
+	padding:0;
+	font-family: sans-serif;
+	background: linear-gradient(#141e30, #243b55);
+  }
+
 strong { font-weight: 500; }
 
 /* a { color: #f35b3f; border-bottom: 1px dashed #f35b3f; text-decoration: none; transition: all .3s; }  */
@@ -17,13 +27,13 @@ img { max-width: 100%; }
 ::-moz-selection { background: #f35b3f; color: #fff; text-shadow: none; }
 ::selection { background: #f35b3f; color: #fff; text-shadow: none; }
 
-.global-container{
+/* .global-container{
 	height:120%;
 	width:1400px;
 	align-items: center;
 	justify-content: center;
 	background: linear-gradient(#141e30, #243b55);
-	} 
+	}  */
 
 /***navbar***/
 
@@ -310,7 +320,9 @@ ul li:hover a{
 /***** Content *****/
 .content {
 	width: 50%;
-	transition: all 0.3s; }
+	transition: all 0.3s;
+}
+	
 
 .open-menu {
 	position: fixed ; 

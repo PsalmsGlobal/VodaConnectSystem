@@ -68,7 +68,7 @@ body {
 .login-box .user-box input:valid ~ label {
   top: -20px;
   left: 0;
-  color: #03e9f4;
+  color: #ed5fdc;
   font-size: 12px;
 }
 
@@ -82,7 +82,7 @@ body {
   text-transform: uppercase;
   overflow: hidden;
   transition: .5s;
-  letter-spacing: 4px; 
+  letter-spacing: 3px; 
   margin-top: 50px;
   top: -30px;
   border-radius: 20px;
@@ -93,26 +93,27 @@ body {
 .login-box i a {
     text-align: justify;
     text-decoration: none;
-    color: rgb(24, 226, 226);
-    margin-left: 40px;
+    color: #ed5fdc;
+    margin-left: 45px;
     font-size: small;
     font-style: normal;
+    padding-top: -20%;
 }
 
 .login-box i a:hover {
     background:transparent;
-    color: aquamarine;
+    color: rgb(243, 166, 226);
     box-shadow: none;
 }
 
 .login-box a:hover {
-  background: #03e9f4;
+  background: #aa1999;
   color: #fff;
   border-radius: 20px;
-  box-shadow: 0 0 5px #03e9f4,
-              0 0 25px #03e9f4,
-              0 0 50px #03e9f4,
-              0 0 100px #03e9f4;
+  box-shadow: 0 0 5px #aa1999,
+              0 0 25px #aa1999,
+              0 0 50px #aa1999,
+              0 0 100px #aa1999;
 }
 
 .login-box a span {
@@ -126,7 +127,7 @@ body {
   left: -100%;
   width: 100%;
   height: 3px;
-  background: linear-gradient(90deg, transparent, #03e9f4);
+  background: linear-gradient(90deg, transparent, #aa1999);
   animation: btn-anim1 1s linear infinite;
 }
 
@@ -144,7 +145,7 @@ body {
   right: 0;
   width: 2px;
   height: 100%;
-  background: linear-gradient(180deg, transparent, #03e9f4);
+  background: linear-gradient(180deg, transparent, #aa1999);
   animation: btn-anim2 1s linear infinite;
   animation-delay: .25s
 }
@@ -160,10 +161,10 @@ body {
 
 .login-box a span:nth-child(3) {
   bottom: 0;
-  right: -100%;
-  width: 100%;
+  right: -90%;
+  width: 90%;
   height: 3px;
-  background: linear-gradient(270deg, transparent, #03e9f4);
+  background: linear-gradient(270deg, transparent, #aa1999);
   animation: btn-anim3 1s linear infinite;
   animation-delay: .5s
 }
@@ -182,7 +183,7 @@ body {
   left: 0;
   width: 2px;
   height: 100%;
-  background: linear-gradient(360deg, transparent, #03e9f4);
+  background: linear-gradient(360deg, transparent, #aa1999);
   animation: btn-anim4 1s linear infinite;
   animation-delay: .75s
 }
@@ -215,7 +216,7 @@ body {
         <span></span>
         <span></span>
         <span></span>
-        Submit
+       LOGIN
       </a>  
     </form>
    <i><a href="{% url 'password_reset' %}">Forgot password?</a></i>
