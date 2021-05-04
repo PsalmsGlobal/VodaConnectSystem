@@ -15,6 +15,7 @@
 <style>
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Numans');
 *{
   margin: 0;
   padding: 0;
@@ -73,14 +74,13 @@ form .input-group span.details{
 }
 .user-details .input-group input{
   height: 45px;
-  width: 100%;
+  width: 140%;
   outline: none;
   font-size: 16px;
-  border-radius: 5px;
   padding-left: 15px;
   border: 1px solid #ccc;
-  border-bottom-width: 2px;
   transition: all 0.3s ease;
+  font-size: small;
 }
 
 .user-details .input-group span {
@@ -109,13 +109,15 @@ form .input-group span.details{
    cursor: pointer;
  }
 
- form .form-group {
+form .form-group {
   float: left;
-  margin-right: 60px;
+  margin-right: 80px;
+  width: 80%;
 }
 
 form .form-group1 {
   margin-left: 50px;
+  width: 80%;
 }
 
  form .category label .dot{
@@ -130,7 +132,8 @@ form .form-group1 {
  form .button{
     height: 45px;
     margin: 35px;
-    margin-left: 60px;
+    margin-left: 50px;
+    margin-top: 15px;
  }
 
  form .button input{
@@ -147,8 +150,6 @@ form .form-group1 {
    transition: all 0.3s ease;
    background: linear-gradient(135deg, #71b7e6, #9b59b6);
  }
-
-
 
  form .button input:hover{
   transform: scale(0.9);
@@ -210,7 +211,7 @@ form .user-details .input-group{
           <div class="row justify-content-around">
             <div class="col-12">
             <div class="form-group1">
-              <select class="form-control text-secondary input-group-text">
+              <select class="form-control text-secondary" style="font-size: small;">
                   <option class="hidden" style="font-size: small;" selected disabled>Company</option>
                   <option class="text-dark" style="font-size: small;">G.P.G Corporation</option>
                   <option class="text-dark" style="font-size: small;">Landmaster.Us</option>
@@ -224,7 +225,7 @@ form .user-details .input-group{
           <div class="row">
             <div class=" col align-self-start">
           <div class="form-group">
-              <select class="form-control text-secondary">
+              <select class="form-control text-secondary" style="font-size: small;">
                   <option class="hidden" style="font-size: small;"  selected disabled>Designation</option>
                   <option class="text-dark" style="font-size: small;">New Client</option>
                   <option class="text-dark" style="font-size: small;">Staff</option>
@@ -237,8 +238,8 @@ form .user-details .input-group{
         </div>
         <div class="button text-center">
           <input type="submit" value="Register">
-          <div class="text-cente mt-2">
-          <a style="text-decoration: none; color:  #ec75de;" href="{% url 'auth:login' %}">Sign-in</a>
+          <div class="link mt-2">
+          <a style="text-decoration: none; color:  #ec75de;" href="{% url 'auth:login' %}">Back-To-Login</a>
         </div>
         </div>
       
